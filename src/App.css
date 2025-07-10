@@ -1,0 +1,177 @@
+body {
+  background: black; 
+  padding: 0 24px;
+  margin: 0;
+  padding-top: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: left;
+}
+
+.App {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  align-content: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.task {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  color: white;
+  width: 80vw
+
+}
+
+.done-container{
+  width: 30px !important;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  min-width: 30px;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  margin-left: 2%;
+  height: 80%;
+  width: 100%;
+  font-size: 1rem;
+  border-bottom: 1.5px solid grey;
+}
+
+.input-filled {
+  text-decoration:line-through;
+  color: grey;
+}
+
+*:focus{
+  outline: none;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+/* universally removes all highlighting of onClick buttons or inputs */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.unfilled {
+  border: none;
+  border-radius: 50%; 
+  width: 19px; 
+  min-width: 19px;  
+  height: 19px;  
+  display: flex;   
+  align-items: center; 
+  justify-content: center; 
+   padding: 0; 
+}
+
+.filled {
+  background-color: red;
+}
+
+button.done{
+  border: 1.5px solid grey;
+  border-radius: 50%; 
+  width: 25px !important;   
+  height: 25px;  
+  display: flex;   
+  align-items: center; 
+  justify-content: center; 
+   padding: 0; 
+}
+
+.done-filled{
+border: 1.5px solid red !important;
+}
+
+onhover{
+  border-color: red;
+}
+
+.add-container{
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+.add-container:hover{
+  cursor: pointer;
+}
+
+h2{
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center;
+  margin: 0; 
+  transform: translateY(.125rem);
+}
+
+button.add {
+  margin-top: 5px;
+  margin-left: 2.5px;
+  margin-right: 7px;
+  background-color: red;
+  border-radius: 100%;
+  font-weight: bold;
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  
+  display: flex;
+  justify-content: center; /* horizontal alignment */
+}
+
+p.add{
+  font-size: 30px;
+  display: flex;
+  line-height: 25px;
+  align-items: center;
+  height: 25px;
+  margin: 0;
+  transform: translateY(-.2rem);
+  color: black;
+}
+
+button.remove{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  border-radius: 100%;
+  transform: translateY(-1px);
+  height: 30px;
+  width: 30px;
+}
